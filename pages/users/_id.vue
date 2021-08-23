@@ -11,6 +11,9 @@
       return {
         message: '/users/_id.vue'
       }
+    },
+    validate({ params }) {
+      return /^\d+$/.test(params.id)
     }
   }
 </script>
